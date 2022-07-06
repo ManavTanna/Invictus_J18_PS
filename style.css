@@ -1,0 +1,285 @@
+#header {
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(52, 58, 64, 1), rgba(108, 117, 125, 0.6)), url(https://images.static-collegedunia.com/public/college_data/images/appImage/15528_VESIT.jpg?tr=w-1300,h-200,c-force);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 120px;
+}
+#logo {
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+color: antiquewhite;
+    
+    height: 100%;
+
+}
+
+h2 {
+    margin: 16px 0;
+    border-left: 5;
+    padding-left: 20px;
+    border-color: chartreuse;
+}
+
+.boxed {
+    background-color: blue;
+    width: 250px;
+    border: 15px ;
+    border-color: rgb(72, 255, 0);
+    padding: 50px;
+    margin: 20px;
+    left: 80px;
+    top: 30px;
+}
+
+.container {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    width: em;
+    grid-gap: 6rem;
+    grid-template-rows: repeat(auto-fit, minmax(30rem, 0.5fr));
+    align-items: center;
+    
+}
+
+.grid-item{
+    background-color: lightgray;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.contain{
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    background: rgb(21, 6, 46);
+    position: absolute;
+    transition: 0.5s;
+    overflow: hidden;
+    top: 20%;
+    left: 72%;
+}
+
+.contain.active
+{
+    width: 360px;
+}
+
+.contain .icon
+{
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+.contain .icon .search
+{
+  font-size: 30px;
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.contain .input{
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  
+}
+
+.contain .input input{
+    position: relative;
+    top: 0;
+    width: 70%;
+    height: 70%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+  
+}
+
+.contain .input .clear{
+
+    position: relative;
+    right: -40px;
+    top: 15%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 20px;
+    background: rgb(21, 6, 46);
+   
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--clr-gray-light);
+  }
+  
+  .btn-add {
+    width: 6em;
+    height: 2em;
+    font-size: 1.5em;
+    border: none;
+    background-color: #2962ff;
+    color: white;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    border-radius: 0.2em;
+    outline: none;
+    transition: all 100ms ease-in;
+  }
+  
+  .btn-add:active,
+  .btn-add:hover {
+    background-color: var(--clr-primary-hover);
+  }
+  
+  main {
+    margin-top: 1em;
+  }
+  
+  #div-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2em 0em;
+  }
+  
+  .div-shadow {
+    width: 5em;
+    height: 2em;
+    margin: 0 1em 1em 0;
+    transition: all 100ms ease-in-out;
+  }
+  
+  .div-shadow:nth-child(odd) {
+    box-shadow: 0px 0px 10px var(--clr-gray-med);
+  }
+  
+  .div-shadow:nth-child(even) {
+    box-shadow: inset 0px 0px 10px var(--clr-gray-med);
+  }
+  
+  .div-shadow:hover {
+    transform: scale(1.2);
+  }
+
+  .k1{
+    text-align: center;
+    
+    padding: 0px;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+.containers{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="link"],
+select, 
+file,
+textarea{
+     width: 100%;
+     padding: 17px;
+     border: 1px solid rgb(132, 209, 235);
+     border-radius: 6px;
+     margin: 5px;
+}
+
+.main{
+    text-align: center;
+}
+
+input[type="submit"]{
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+   
+}
+
+input[type="submit"] :hover{
+    background-color: rgb(79, 156, 182);
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.btn4{
+	background-color: transparent;
+	border-radius: 10px;
+	transition: ease-out 0.3s;
+	font-size: 1.5rem;
+	outline: none;
+	border: 3px solid #15062e;
+	position: relative;
+	z-index: 1;
+}
+.btn4:hover{
+	color: #ffffff;
+	cursor: pointer;
+}
+.btn4:before{
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	opacity: 0;
+	content: "";
+	background-color: #15062e;
+}
+.btn4:hover:before{
+	transition: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	z-index: -1;
+}
